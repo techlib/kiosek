@@ -96,26 +96,6 @@ function BrowserLoadURL(aTriggeringEvent, aPostData) { // override browser.js
     }
     window.removeEventListener("load", startup, false);
 
-    var nobrand = false;
-    try {
-      nobrand = Services.prefs.getBoolPref("extensions.kiosek.nobrand");
-    } catch(e) {}
-    if (!nobrand) {
-      var insertAfter = document.getElementById("alltabs-button");
-      document.getElementById("alltabs-button");
-      var allTabsButton = document.getElementById("alltabs-button");
-      var spacer = document.createElement("spacer");
-      spacer.setAttribute("flex", "1");
-      insertAfter.parentNode.appendChild(spacer);
-      var box = document.createElement("box");
-      box.setAttribute("pack", "center");
-      box.setAttribute("align", "center");
-      var image = document.createElement("image");
-      image.setAttribute("src", "chrome://kiosek/content/webclogo.svg");
-      image.setAttribute("tooltiptext", "Kiosek");
-      box.appendChild(image);
-      insertAfter.parentNode.appendChild(box);
-    }
     document.getElementById("appcontent").addEventListener("DOMContentLoaded", onPageLoad, false);
   }
 
