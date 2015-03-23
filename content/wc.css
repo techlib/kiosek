@@ -1,5 +1,5 @@
 /*
- * Webconverger.com
+ * Kiosek.com
  *
  * Do not remove the @namespace line -- it's required for correct functioning
  */
@@ -99,25 +99,8 @@ toolbarbutton.bookmark-item,
 #context_openTabInWindow,
 #unknownContentType { display: none !important;}
 
-/* webcnoaddressbar */
-#urlbar-container { visibility: collapse }
-
 #PanelUI-button {
   display: none;
-}
-
-#nav-bar > * {
-  visibility: collapse;
-}
-
-#nav-bar {
-    height: 5px;
-    min-height: 5px;
-}
-
-#webconverger-toolbar {
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 #wc-back {
@@ -167,4 +150,9 @@ toolbarbutton.bookmark-item,
 .tabbrowser-tabs > * > * > * > .tab-close-button:not([pinned]) {
 	display: -moz-box;
 	visibility: visible !important;
+}
+
+/* Don't show the little plugin icon next to the URL bar */
+#notification-popup-box {
+  display: none;
 }

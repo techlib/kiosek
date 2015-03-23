@@ -1,4 +1,4 @@
-pref("browser.display.background_color", "#000000");
+// http://kiosek.org/kiosk/
 
 pref("devtools.errorconsole.enabled", false);
 

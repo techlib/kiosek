@@ -17,7 +17,7 @@ FileBlock.prototype = {
     this.profileDir = Services.io.newFileURI(profileDir).spec
     this.tempDir = Services.io.newFileURI(Services.dirsvc.get("TmpD", Ci.nsIFile)).spec;
     try {
-      var whitelist = Services.prefs.getCharPref("extensions.webconverger.whitelist");
+      var whitelist = Services.prefs.getCharPref("extensions.kiosek.whitelist");
       this.whitelist = whitelist.split(",");
       for (var i=0; i < this.whitelist.length; i++) {
         this.whitelist[i] = this.whitelist[i].trim();
@@ -25,7 +25,7 @@ FileBlock.prototype = {
     } catch(e) {}
 
     var whitelistFile = profileDir.clone();
-    whitelistFile.append("webconverger.whitelist");
+    whitelistFile.append("kiosek.whitelist");
     if (!whitelistFile.exists()) {
       return;
     }
@@ -121,7 +121,7 @@ FileBlock.prototype = {
     // If we had a whitelist, reject everything else
     if (this.whitelist.length > 0) {
       if (aContentType == Ci.nsIContentPolicy.TYPE_DOCUMENT) {
-        Services.prompt.alert(null, "Webconverger", "Not allowed, whitelist only permits: " + this.whitelist.join(", "));
+        Services.prompt.alert(null, "Kiosek", "Not allowed, whitelist only permits: " + this.whitelist.join(", "));
         return Ci.nsIContentPolicy.REJECT_REQUEST;
       }
     }
@@ -131,8 +131,8 @@ FileBlock.prototype = {
   shouldProcess: function(aContentType, aContentLocation, aRequestOrigin, aContext, aMimeTypeGuess, aExtra) {
     return Ci.nsIContentPolicy.ACCEPT;
   },
-  classDescription: "Webconverger FileBlock Service",
-  contractID: "@webconverger.com/fileblock-service;1",
+  classDescription: "Kiosek FileBlock Service",
+  contractID: "@kiosek.com/fileblock-service;1",
   classID: Components.ID('{607c1749-dc0a-463c-96cf-8ec6c3901319}'),
   QueryInterface: XPCOMUtils.generateQI([Ci.nsIContentPolicy])
 }
