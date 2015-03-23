@@ -1,0 +1,4 @@
+content/wc.*
+defaults/
+extensions/
+*.xpi
