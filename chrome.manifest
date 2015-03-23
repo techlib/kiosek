@@ -1,7 +1,7 @@
 content    kiosek                                                     content/
 resource   kiosek                                                     modules/
-overlay    chrome://browser/content/browser.xul                       chrome://kiosek/content/wc.xul
-style      chrome://browser/content/browser.xul                       chrome://kiosek/content/wc.css
+overlay    chrome://browser/content/browser.xul                       chrome://kiosek/content/browser.xul
+style      chrome://browser/content/browser.xul                       chrome://kiosek/content/browser.css
 style      chrome://global/content/config.xul                         chrome://kiosek/content/blank.css
 style      about:config                                               chrome://kiosek/content/blank.css
 style      chrome://browser/content/safeMode.xul                      chrome://kiosek/content/blank.css

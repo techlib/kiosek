@@ -103,46 +103,46 @@ toolbarbutton.bookmark-item,
   display: none;
 }
 
-#wc-back {
+#browser-back {
   list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
 }
-#wc-back[disabled="true"] {
+#browser-back[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
 }
 
-#wc-forward {
+#browser-forward {
   list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
 }
-#wc-forward[disabled="true"] {
+#browser-forward[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
 }
 
-#wc-reload {
+#browser-reload {
   list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar");
 }
-#wc-reload[disabled="true"] {
+#browser-reload[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar&state=disabled");
 }
 
-#wc-stop {
+#browser-stop {
   list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar");
 }
-#wc-stop[disabled="true"] {
+#browser-stop[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar&state=disabled");
 }
 
-#wc-print {
+#browser-print {
   list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
 }
-#wc-print[disabled="true"] {
+#browser-print[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled");
 }
 
-#wc-home {
+#browser-home {
   list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
 }
 
-#wc-home[disabled="true"] {
+#browser-home[disabled="true"] {
   list-style-image: url("moz-icon://stock/gtk-home?size=toolbar&state=disabled");
 }
 
