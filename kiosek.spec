@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 Name:		kiosek
-Version:	1
+Version:	2
 Release:	1%{?dist}
 Summary:	NTK Kiosk Firefox Addon
 

@@ -51,9 +51,12 @@ pref("dom.max_script_run_time", 0);
 // Disable the popup window that shows up when F7 is pressed
 pref("accessibility.browsewithcaret_shortcut.enabled", false);
 
+/* Disable the "Launch application" dialog. */
+pref("network.protocol-handler.external.mail", false);
 pref("network.protocol-handler.external.mailto", false);
 pref("network.protocol-handler.external.news", false);
 pref("network.protocol-handler.external.nntp", false);
 pref("network.protocol-handler.external.snews", false);
+pref("network.protocol-handler.external.irc", false);
 
 pref("plugin.default.state", 2);
